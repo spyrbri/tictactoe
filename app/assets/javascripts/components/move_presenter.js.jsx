@@ -24,6 +24,10 @@ MovePresenter = React.createClass({
         this.updateMoves(data);
       },
 
+      selectTile: function(data) {
+        this.perform('select_tile', { tile: data })
+      },
+
       updateMoves: this.updateMoves
     });
   },
