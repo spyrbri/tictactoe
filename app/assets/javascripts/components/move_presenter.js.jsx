@@ -22,6 +22,7 @@ MovePresenter = React.createClass({
 
       received: function(data) {
         this.updateMoves(data);
+        alert(data)
       },
 
       selectTile: function(data) {
@@ -35,6 +36,7 @@ MovePresenter = React.createClass({
   render: function () {
     return (
       <div id='moves'>
+        <MoveList moves={ this.props.moves } />
       </div>
     )
   }
