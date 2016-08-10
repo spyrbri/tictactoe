@@ -1,5 +1,6 @@
 class Move < ApplicationRecord
   belongs_to :game
+  acts_as_list scope: :game
 
   after_create_commit { MoveBroadcastJob.perform_later self }
 

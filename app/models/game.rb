@@ -1,3 +1,3 @@
 class Game < ApplicationRecord
-  has_many :moves
+  has_many :moves, -> { order("position ASC") }
 end
