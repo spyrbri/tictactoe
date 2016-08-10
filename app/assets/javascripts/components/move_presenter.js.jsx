@@ -35,7 +35,7 @@ MovePresenter = React.createClass({
 
   render: function () {
     return (
-      <div id='moves'>
+      <div id='moves' className="col-xs-offset-4">
         <MoveList moves={ this.props.moves } />
       </div>
     )

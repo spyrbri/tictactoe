@@ -1,6 +1,8 @@
 var Move = React.createClass({
   render: function() {
-    return (<div> </div>)
+    return (
+      <div className='tile col-xs-4'> </div>
+    )
   }
 });
 
