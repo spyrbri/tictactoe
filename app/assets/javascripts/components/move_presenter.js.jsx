@@ -7,10 +7,15 @@ MovePresenter = React.createClass({
     var currentMoves = this.props.moves
     var newMoves = currentMoves.push(data.move)
     this.setState({ moves: newMoves })
+    var player = (data.move.position % 2) || 2
+
+    console.log('Player ' + player + ' played!')
 
     if (data.winner) {
+      alert('Player ' + player + ' wins!')
       window.location.reload()
     } else if (data.tie) {
+      alert('We have a tie')
       window.location.reload()
     }
   },
