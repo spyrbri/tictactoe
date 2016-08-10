@@ -4,7 +4,9 @@ MovePresenter = React.createClass({
   },
 
   updateMoves: function(data) {
-    alert(data);
+    var currentMoves = this.props.moves
+    var newMoves = currentMoves.push(data.move)
+    this.setState({ moves: newMoves })
   },
 
   componentDidMount: function() {
@@ -22,7 +24,6 @@ MovePresenter = React.createClass({
 
       received: function(data) {
         this.updateMoves(data);
-        alert(data)
       },
 
       selectTile: function(data) {
