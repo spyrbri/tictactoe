@@ -7,6 +7,12 @@ MovePresenter = React.createClass({
     var currentMoves = this.props.moves
     var newMoves = currentMoves.push(data.move)
     this.setState({ moves: newMoves })
+
+    if (data.winner) {
+      window.location.reload()
+    } else if (data.tie) {
+      window.location.reload()
+    }
   },
 
   componentDidMount: function() {
