@@ -18,10 +18,6 @@ var MoveList = React.createClass({
       moveList.push(<Move key={ i } tile={ i } symbol={ symbolForTile(i) } />)
     }
 
-    return (
-      <div className='col-xs-6 col-xs-6-offset-3'>
-        { moveList }
-      </div>
-    )
+    return (<div>{ moveList }</div>)
   }
 });
