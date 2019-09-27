@@ -1,6 +1,7 @@
 # Tic Tac Toe
 
 This is the classical TicTacToe game made with Ruby on Rails with ActionCable and ReactJs
+http://tictactoeforquiqup.herokuapp.com/
 
 ## Main Idea
 The main idea is that there are 9 tiles
